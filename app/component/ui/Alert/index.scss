@@ -1,3 +1,39 @@
-.alert-wrapper {
-    border: 2px dotted teal
+// ** Error **
+$errorBg: rgb(192 29 29 / 15%);
+$errorColor: #ef8d8dfa;
+$errorBorder: rgba(255, 25, 0, 0.322);
+
+.alert-danger {
+    color: $errorBorder;
+    background-color: $errorBg;
+
+    .alert-header {
+        display: flex;
+        border-radius: 0.8rem;
+        align-items: center;
+        padding: 1.3rem;
+        justify-content: space-between;
+        background-color: $errorBg;
+
+        .title {
+            display: flex;
+            align-items: center;
+        }
+
+        span svg {
+            margin-right: 0.8rem;
+        }
+    }
+
+    p {
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        margin-top: 1.2rem;
+    }
+
+    .close {
+        cursor: pointer;
+    }
+
 }
